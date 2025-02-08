@@ -77,7 +77,6 @@ extern "C" JNIEXPORT void JNICALL Java_com_example_mixzarb_MainActivity_playMusi
 
     // if input is not valid
     if (notValid) {
-        env->ReleaseStringUTFChars(input, input_str);
         invalid_input(env, object);
         LOGE("Invalid input: %d", notValid);
         return;
